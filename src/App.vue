@@ -4,10 +4,20 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <Multiselect></Multiselect>
     <router-view/>
   </div>
 </template>
+<script>
+import { Multiselect } from 'multiselect/src';
 
+export default {
+	name: 'App',
+	components: {
+		Multiselect,
+	},
+};
+</script>
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
