@@ -1,2 +1,29 @@
-# planner-settings
-Módulo de configuración de la aplicación Planner. En este módulo se encuentra el perfil de usuario y las variables globales que cada proyecto y actividad heredará
+# hello-world
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
