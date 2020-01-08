@@ -1,13 +1,11 @@
 <template>
 	<div>
-		<h2>Pantalla de Perfil de Usuario</h2>
-		<router-view name="email"></router-view>
+		<h3>Cambio de contrasena</h3>
 	</div>
 </template>
 <script>
-
 export default {
-	name: 'Profile',
+	name: 'email-update',
 };
 </script>
 <style lang="scss" scoped>

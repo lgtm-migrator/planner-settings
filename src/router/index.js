@@ -7,7 +7,16 @@ import Home from '../views/Home.vue';
 Vue.use(VueRouter);
 
 const routes = [
-	Profile,
+	{
+		path: '/mi-cuenta',
+		name: 'account',
+		components: {
+			account: () => import('@/Layouts/settingsLayout.vue'),
+		},
+		children: [
+			Profile,
+		],
+	},
 	{
 		path: '/',
 		name: 'home',

@@ -3,11 +3,11 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link :to="{ name: 'profile' }">Perfil de usuario</router-link>
+      <router-link :to="{ name: 'account' }">Configuraciones</router-link>
     </div>
     <Multiselect></Multiselect>
     <router-view/>
-    <router-view name="profile"/>
+    <router-view name="account"/>
   </div>
 </template>
 <script>
