@@ -5,18 +5,18 @@
       <router-link to="/about">About</router-link> |
       <router-link :to="{ name: 'account' }">Configuraciones</router-link>
     </div>
-    <Multiselect></Multiselect>
+    <MultiSelect></MultiSelect>
     <router-view/>
     <router-view name="account"/>
   </div>
 </template>
 <script>
-import { Multiselect } from 'multiselect/src';
+import MultiSelect from 'multiselect';
 
 export default {
 	name: 'App',
 	components: {
-		Multiselect,
+		MultiSelect,
 	},
 };
 </script>
