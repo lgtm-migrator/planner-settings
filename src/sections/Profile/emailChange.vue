@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h3>Cambio de contrasena</h3>
+		<h3>Cambio de correo</h3>
 	</div>
 </template>
 <script>
