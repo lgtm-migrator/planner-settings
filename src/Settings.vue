@@ -4,45 +4,18 @@
 			:show="show"
 		>
 			<template v-slot:aside>
-				<ul class="menu-web" data-cy="menu-web">
-					<li
-						v-for="opt in routes"
-						:key="opt.title"
-						class="bg-blue-500"
-					>
-						<button
-							type="button"
-							@click="currentRoute = opt"
-						>{{opt.title}}</button>
-					</li>
-				</ul>
+				<menu-component :routes="routes"/>
 			</template>
 			<template v-slot:main-content>
 				<div data-cy="main-content-container">
 					<h1>Contenido</h1>
 				</div>
 			</template>
-			<!-- <template v-slot:menu-movil>
-				<div class="wrapper-menu-movil" data-cy="menu-movil">
-					<button
-						class="go-back"
-						type="button"
-						@click="show = false"
-					>regresar</button>
-					<ul class="movil">
-						<li
-						v-for="opt in menu"
-						:key="opt.title"
-						>
-							<button type="button" @click="currentOption = opt">{{opt.title}}</button>
-						</li>
-					</ul>
-				</div>
-			</template> -->
 		</user-profile-layout>
 	</div>
 </template>
 <script>
+import menuComponent from '@/components/menu/menu.vue';
 
 function data() {
 	return {
@@ -59,6 +32,9 @@ function data() {
 
 export default {
 	name: 'setting-layout',
+	components: {
+		menuComponent,
+	},
 	data,
 };
 </script>
@@ -67,6 +43,14 @@ html, body {
 	font-size: 62.5%;
 	margin: 0;
 }
+.layout-container {
+	margin: 0 auto;
+	width: 87rem;
 
-@import './styles/index.scss';
+	.aside-container {
+		flex-basis: 25% !important;
+		@apply mr-4;
+	}
+}
+@import 'tailwindcss/utilities';
 </style>
